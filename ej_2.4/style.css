@@ -1,0 +1,87 @@
+@font-face {
+    src: url(/fonts/PublicPixel.ttf);
+    font-family: h1;
+}
+
+@font-face {
+    src: url(/fonts/PublicPixel.ttf);
+    font-family: h3;
+}
+
+@font-face {
+    src: url(/fonts/Pixolletta8px.ttf);
+    font-family: body;
+}
+
+body {
+    background-color: #2C2925;
+    color: #EFF1F0;
+    display: flexbox;
+    flex-direction: column;
+    margin: 0;
+    font-family: body;
+    font-size: 1em;
+}
+
+a:link,
+a:visited {
+    color: #6AABC7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #348DAB;
+}
+
+a:active {
+    color: #EBD222;
+}
+
+a {
+    /*
+    border: 1px solid black;
+    border-radius: 0.3em;
+    */
+    padding: 1em;
+}
+
+h1 {
+    background-color: #754A3A;
+    color: #EBD222;
+    font-family: h1;
+    font-size: 4em;
+    margin: 0;
+    padding: 1em 9em 1em 0;
+}
+
+h3 {
+    background-color: #754a3a75;
+    color: #EBD222;
+    font-family: h3;
+    font-size: 2em;
+    padding: 0.5em 0;
+}
+
+p {
+    font-size: 2em;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 2em;
+}
