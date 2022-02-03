@@ -1,0 +1,375 @@
+/*----------FUENTES DE LETRA----------*/
+
+@font-face {
+    src: url(/fonts/PublicPixel.ttf);
+    font-family: h1;
+}
+
+@font-face {
+    src: url(/fonts/PublicPixel.ttf);
+    font-family: h3;
+}
+
+@font-face {
+    src: url(/fonts/Pixolletta8px.ttf);
+    font-family: body;
+}
+
+
+/*----------GENERAL----------*/
+
+body {
+    background-color: #2C2925;
+    color: #EFF1F0;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: body;
+    font-size: 1em;
+    margin: 5% 0;
+}
+#sinopsis{
+    position: relative;
+}
+#sinopsis div{
+    padding: 0;
+    margin: 0;
+}
+#sinopsis h3{
+    margin-top: 0;
+}
+#sinopsis p{
+    float: left;
+}
+#sinopsis img{
+    max-width: 30em;
+    width: 100%;
+position: absolute;
+top: 50%;
+right: 10%;
+}
+
+section {
+    clear: both;
+    padding-left: 0;
+}
+
+p,
+figure,
+form {
+    font-size: 1em;
+    margin-left: 1em;
+    background-color: rgba(255, 255, 255, 0.034);
+    padding: 1em;
+}
+
+#streaming article>p {
+    padding: 1em;
+    display: flex;
+    max-width: max-content;
+}
+iframe{
+    height: 30em;
+    border: none;
+}
+.videogame figure{
+    display: inline-flex;
+    max-width: 52em;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+/*----------ul----------*/
+
+.horizontal {
+    display: flex;
+    flex-flow: row no-wrap;
+    font-size: 1.5em;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.resize {
+    max-width: 30em;
+    size: 10%;
+    font-size: 1em;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+ul {
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.034);
+    padding: 1em;
+    margin-left: 0;
+}
+
+
+/*----------MEDIA----------*/
+
+#media figure {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+#personajes figure {
+    display: flex;
+    align-items: center;
+}
+
+#personajes figure img {
+    float: left;
+    margin: 0 1em;
+}
+
+#media figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#media figure img,
+video,
+iframe {
+    width: 100%;
+    max-width: 50em;
+    padding: 1em;
+}
+
+figcaption {
+    margin-top: 1em;
+}
+
+
+/*----------<a>----------*/
+
+a:link,
+a:visited {
+    color: #6AABC7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6AABC7;
+}
+
+a:active {
+    color: #EBD222;
+}
+
+a {
+    display: flexbox;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 1em;
+}
+
+span {
+    color: #6AABC7;
+}
+
+
+/*----------ENCABEZADOS----------*/
+
+h1 {
+    background: rgb(117, 74, 58);
+    background: linear-gradient(23deg, rgba(117, 74, 58, 1) 0%, rgba(187, 107, 77, 1) 100%);
+    color: #ffe731;
+    font-family: h1;
+    font-size: 4em;
+    margin: 0;
+    padding: 1em 9em 1em 1em;
+    position: relative;
+}
+
+h3 {
+    background: rgb(117, 74, 58);
+    background: linear-gradient(23deg, rgba(117, 74, 58, 0.5) 0%, rgba(187, 107, 77, 0.5) 100%);
+    color: #ffe731;
+    font-family: h3;
+    font-size: 2em;
+    padding: 0.5em 0;
+}
+
+h4 {
+    color: #ffe731;
+    margin-left: 1em;
+}
+
+h5 {
+    color: #fffd6d;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.034);
+}
+
+
+/*----------TABLA----------*/
+
+.tabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    justify-items: stretch;
+    justify-content: space-between;
+    background-color: #44403a;
+    padding: 0.3em 0.3em;
+    margin: 0 5em;
+}
+
+.item8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.tabla div {
+    background-color: #ffffff3a;
+    padding: 0.75em;
+}
+
+.item1,
+.item4,
+.item7,
+.item9 {
+    color: #fffd6d;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*----------FORMULARIOS----------*/
+
+#opinion{
+    display: flex;
+    flex-direction: column;
+    
+}
+form {
+    width: 30%;
+    justify-content: center;
+    margin: 0;
+    align-self: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.opinion div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#nota_pelicula{
+    padding: 0;
+}
+
+.form_part {
+    padding-bottom: 2em;
+}
+
+input,
+textarea {
+    font-family: body;
+    background-color: #2C2925;
+    color: rgba(240, 248, 255, 0.37);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(109, 109, 109);
+}
+textarea{
+    box-sizing: border-box;
+}
+
+label {
+    color: rgba(240, 248, 255, 0.37);
+}
+
+.opinion p {
+    background-color: initial;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    color: #ffe731;
+}
+.opinion{
+    align-content: center;
+}
+input[type="range"] {
+    width:100%;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: #f9f9f9;
+    transform: scale(1.1);
+}
+/*nav*/
+
+.drop_btn {
+    
+    background-color: #6969693a;
+    color:#ffe731;
+    font-family: body;
+    height: 100%;
+    margin: 1em 0;
+    display: inline-flex;
+    padding: 1em;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+  }
+
+  nav {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .drop_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .drop_content a {
+      color: #f9f9f9;
+
+    text-decoration: none;
+    display: block;
+    line-height: 4.5em;
+  }
+  .drop_content a:hover {color: #6AABC7;
+    background-color: #ffffff3a;
+  }
+  
+  /* ENSEÑA EL MENU */
+  nav:hover .drop_content {
+    
+    background-color: rgba(255, 255, 255, 0.034);
+    display: inline-flex;
+    height: 100%;
+    align-content: center;
+  }
+  
+  nav:hover .drop_btn {
+    background-color: #ffffff3a;
+    
+  }
