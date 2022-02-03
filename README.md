@@ -1,3 +1,3 @@
-# ej_2.4
-Review de la película: Beavis and Butt-Head do America
-La única mejora que hice fue comprimir las imagenes y videos de la página desde imagecompressor.com para optimizar un poco la página.
+ej_2.4 corregido: https://cirosanjorge.github.io/ej_2.4-ej_2.7/ej_2.4/
+ej_2.7:           https://cirosanjorge.github.io/ej_2.4-ej_2.7/ej_2.7/
+ej_2.7_responsive:  https://cirosanjorge.github.io/ej_2.4-ej_2.7/ej_2.7_plantilla_responsive/
