@@ -1,17 +1,17 @@
 /*----------FUENTES DE LETRA----------*/
 
 @font-face {
-    src: url(/fonts/PublicPixel.ttf);
+    src: url(fonts/PublicPixel.ttf);
     font-family: h1;
 }
 
 @font-face {
-    src: url(/fonts/PublicPixel.ttf);
+    src: url(fonts/PublicPixel.ttf);
     font-family: h3;
 }
 
 @font-face {
-    src: url(/fonts/Pixolletta8px.ttf);
+    src: url(fonts/Pixolletta8px.ttf);
     font-family: body;
 }
 
