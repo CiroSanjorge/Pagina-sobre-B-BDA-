@@ -27,25 +27,94 @@ body {
     font-size: 1em;
     margin: 5% 0;
 }
-#sinopsis{
-    position: relative;
+
+
+/*nav*/
+
+.drop_btn {
+    background-color: #6969693a;
+    color: #ffe731;
+    font-family: body;
+    height: 100%;
+    margin: 1em 0;
+    display: inline-flex;
+    margin: 0;
+    padding: 1.4em;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
 }
-#sinopsis div{
+
+nav {
+    position: relative;
+    display: inline-block;
+}
+
+.drop_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 1.4em;
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.drop_content a {
+    color: #f9f9f9;
+    text-decoration: none;
+    display: block;
+    line-height: 2.8em;
+}
+
+.drop_content a:hover {
+    color: #6AABC7;
+    background-color: #ffffff3a;
+}
+
+
+/* ENSEÑA EL MENU */
+
+nav:hover .drop_content {
+    background-color: rgba(255, 255, 255, 0.034);
+    display: inline-flex;
+    height: 100%;
+    align-content: center;
+}
+
+nav:hover .drop_btn {
+    background-color: #ffffff3a;
+}
+
+#sinopsis div {
+    display: flex;
+    flex-flow: row wrap;
     padding: 0;
     margin: 0;
 }
-#sinopsis h3{
+
+#sinopsis h3 {
     margin-top: 0;
 }
-#sinopsis p{
-    float: left;
-}
-#sinopsis img{
+
+#sinopsis img,
+#director img {
     max-width: 30em;
-    width: 100%;
-position: absolute;
-top: 114%;
-right: 10%;
+    position: relative;
+    top: 50%;
+    right: -15%;
+}
+
+#director {
+    position: relative;
+}
+
+#director img {
+    position: absolute;
+    top: 4.9em;
+    right: 10em;
+    width: 30.3333%;
 }
 
 section {
@@ -67,11 +136,13 @@ form {
     display: flex;
     max-width: max-content;
 }
-iframe{
+
+iframe {
     height: 30em;
     border: none;
 }
-.videogame figure{
+
+.videogame figure {
     display: inline-flex;
     max-width: 52em;
     width: 100%;
@@ -117,6 +188,7 @@ ul {
 img {
     padding: 0;
     margin: 0;
+    border-radius: 3px;
 }
 
 #personajes figure {
@@ -251,11 +323,11 @@ footer {
 
 /*----------FORMULARIOS----------*/
 
-#opinion{
+#opinion {
     display: flex;
     flex-direction: column;
-    
 }
+
 form {
     width: 30%;
     justify-content: center;
@@ -266,7 +338,6 @@ form {
 form div {
     display: flex;
     flex-direction: column;
-    
 }
 
 .opinion div {
@@ -274,7 +345,8 @@ form div {
     flex-direction: row;
     justify-content: space-between;
 }
-#nota_pelicula{
+
+#nota_pelicula {
     padding: 0;
 }
 
@@ -293,7 +365,8 @@ textarea {
     border-radius: 0;
     border-bottom: 1px solid rgb(109, 109, 109);
 }
-textarea{
+
+textarea {
     box-sizing: border-box;
 }
 
@@ -308,68 +381,17 @@ label {
     text-align: center;
     color: #ffe731;
 }
-.opinion{
+
+.opinion {
     align-content: center;
 }
+
 input[type="range"] {
-    width:100%;
+    width: 100%;
 }
+
 input[type="submit"]:hover {
     cursor: pointer;
     color: #f9f9f9;
     transform: scale(1.1);
 }
-/*nav*/
-
-.drop_btn {
-    
-    background-color: #6969693a;
-    color:#ffe731;
-    font-family: body;
-    height: 100%;
-    margin: 1em 0;
-    display: inline-flex;
-    padding: 1em;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-  }
-
-  nav {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .drop_content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .drop_content a {
-      color: #f9f9f9;
-
-    text-decoration: none;
-    display: block;
-    line-height: 4.5em;
-  }
-  .drop_content a:hover {color: #6AABC7;
-    background-color: #ffffff3a;
-  }
-  
-  /* ENSEÑA EL MENU */
-  nav:hover .drop_content {
-    
-    background-color: rgba(255, 255, 255, 0.034);
-    display: inline-flex;
-    height: 100%;
-    align-content: center;
-  }
-  
-  nav:hover .drop_btn {
-    background-color: #ffffff3a;
-    
-  }
